@@ -1,0 +1,97 @@
+# Root-level gitignore for mixed Android (Gradle) + Arduino project
+
+############################
+# General
+############################
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.orig
+
+############################
+# Node / tooling (if any)
+############################
+node_modules/
+
+############################
+# JetBrains / IntelliJ / Android Studio
+############################
+.idea/
+*.iml
+.gradle/
+/local.properties
+/captures/
+/.navigation/
+/.cxx/
+
+# Android build outputs
+**/build/
+**/outputs/
+**/generated/
+
+# Gradle cache
+.gradle/
+**/.gradle/
+
+# Keystores (never commit real keys)
+*.jks
+*.keystore
+
+############################
+# Kotlin specific
+############################
+.kotlinc/
+
+############################
+# Android fastlane (if used)
+############################
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output
+
+############################
+# VSCode / misc editors
+############################
+.vscode/
+.history/
+
+############################
+# Arduino / PlatformIO / build artifacts
+############################
+# Arduino IDE build caches
+*.arduino.*
+*.ino.cpp
+*.elf
+*.eep
+*.hex
+*.bin
+*.map
+*.lst
+
+# PlatformIO (if ever used here)
+.pio/
+.piolibdeps/
+
+# Mac serial port files (just in case)
+*.dmg
+
+############################
+# OS / OneDrive noise
+############################
+*.tmp
+~$*
+$RECYCLE.BIN/
+System Volume Information/
+
+############################
+# Local environment / secrets samples
+############################
+.env
+.env.*
+.env.local
+
+# End of file
